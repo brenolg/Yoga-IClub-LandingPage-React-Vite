@@ -4,16 +4,6 @@ import React from 'react';
 export default function PriceCard({
   title, subTitle, price, list, link, isPremium, isTabletAndMobile, isMobile, isTablet,
 }) {
-  const handleAosDelay = () => {
-    if (isPremium && !isTabletAndMobile) {
-      return '0';
-    }
-    if (!isPremium && !isTabletAndMobile) {
-      return '500';
-    }
-    return '0';
-  };
-
   const handleSubTitleClass = () => {
     // Mobile
     if (isMobile) {
@@ -40,10 +30,7 @@ export default function PriceCard({
   return (
 
     <div
-      data-aos="fade-up"
-      data-aos-easing="ease-in-out"
-      data-aos-delay={handleAosDelay()}
-      data-aos-duration="1500"
+   
       className={`${isPremium ? 'premium' : 'notPremium'} card_container`}
     >
 

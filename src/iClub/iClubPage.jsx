@@ -1,20 +1,21 @@
 import { useMediaQuery } from 'react-responsive';
 import About from './About/About';
-import Access from './Access/Access';
 import Doubts from './Doubts/Doubts';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import Hero from './Hero/Hero';
-import Moment from './Moment/Moment';
 import Pillars from './Pillars/Pillars';
 import Prices from './Prices/Prices';
-import QuestionsCarrousel from './QuestionsCarrousel/QuestionsCarrousel';
-import ReviewsCarrousel from './ReviewsCarrousel/ReviewsCarrousel';
+import Reviews from './Reviews/Reviews';
+import Numbers from './Numbers/Numbers';
+import Access from './Access/Access';
+import HeroSub from './HeroSub/HeroSub';
+import Seal from './Seal/Seal';
 
 function IClubPage() {
-  const isTabletAndMobile = useMediaQuery({ query: '(max-width: 1127px)' });
-  const isMobile = useMediaQuery({ query: '(max-width: 744px)' });
-  const isTablet = useMediaQuery({ minWidth: 745, maxWidth: 1127 });
+  const isTabletAndMobile = useMediaQuery({ query: '(max-width: 960px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 550px)' });
+  const isTablet = useMediaQuery({ minWidth: 550, maxWidth: 960 });
 
   const devicesProps = {
     isTabletAndMobile,
@@ -26,17 +27,14 @@ function IClubPage() {
     <>
       <Header {...devicesProps} />
       <Hero {...devicesProps} />
-      <QuestionsCarrousel {...devicesProps} />
+      <HeroSub {...devicesProps} />
       <Pillars {...devicesProps} />
-      <Access {...devicesProps} />
-      <Moment {...devicesProps} />
-
-      {!isMobile && (
-      <ReviewsCarrousel {...devicesProps} />
-      )}
-
+      <Numbers {...devicesProps} />
+      <Access {...devicesProps}/>
+      <Reviews {...devicesProps} />
       <Prices {...devicesProps} />
       <Doubts {...devicesProps} />
+      <Seal {...devicesProps} />
       <About {...devicesProps} />
       <Footer {...devicesProps} />
     </>

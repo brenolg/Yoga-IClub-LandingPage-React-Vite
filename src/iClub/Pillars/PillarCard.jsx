@@ -1,25 +1,41 @@
 import PropTypes from 'prop-types';
-import React from 'react';
 import { PillarCardStyles } from './styles';
+import ReactCardFlip from 'react-card-flip';
+import React from 'react';
+import plus from '../../assets/Plus.svg';
 
 export default function PillarCard({
-  isTabletAndMobile, img, text, title,
+  img, firstPart, title, secondPart, strongTxt, className 
 }) {
+  const [isFlipped, setIsFlipped] = React.useState(false);
   return (
 
     <PillarCardStyles
       className="pillar"
-      data-aos="fade"
-      data-aos-easing="linear"
-      data-aos-duration="1500"
     >
+      <h4 className="pillar-title">{title}</h4>
 
-      <img alt="yoga-img" className="pillar_img" src={img} />
+      <ReactCardFlip 
+        isFlipped={isFlipped}
+        flipSpeedBackToFront={1.3} 
+        flipSpeedFrontToBack={1.3}
+      >
+        <button onClick={() => setIsFlipped(!isFlipped)} type="button" className={`pillar-front ${className}`} aria-label={strongTxt}
+        >
+          <div className='plus-aba'>
+            <img src={plus}></img>
+          </div>
+        </button>
 
-      <h4 className="H4">{title}</h4>
-      <p className={isTabletAndMobile ? 'text-sm' : 'text-md'}>
-        {text}
-      </p>
+        <button onClick={() => setIsFlipped(!isFlipped)} type="button" className="pillar-back">
+          <p className='pilar-paragraph'>
+            <span className='pillar-span'>{strongTxt}</span> {firstPart}
+          </p>
+          <p className='pilar-paragraph'>
+            {secondPart}
+          </p>
+        </button>
+      </ReactCardFlip>
     </PillarCardStyles>
 
   );
@@ -30,4 +46,7 @@ PillarCard.propTypes = ({
   img: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  strongTxt: PropTypes.string.isRequired,
+  firstPart: PropTypes.string.isRequired,
+  secondPart: PropTypes.string.isRequired,
 });

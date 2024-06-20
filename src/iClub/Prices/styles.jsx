@@ -2,7 +2,10 @@ import styled from 'styled-components';
 
 const PricesContainer = styled.section`
 background: var(--C2-50p);
-
+padding: var(--spacing-s7, 56px) 76px;
+.prices-main-title {
+  margin-bottom: 2.4rem;
+}
 .prices_section {
   color: var(--C4);
   margin: auto;
@@ -114,7 +117,9 @@ background: var(--C2-50p);
     gap: 0.2rem;
   }
 }
-
+@media screen  and (max-width: 960px){
+  padding: 32px 32px 48px 32px;
+}
 @media screen and (max-width: 850px) {
   .premium {
     max-width: 50%;
@@ -160,6 +165,13 @@ background: var(--C2-50p);
     padding-bottom: 0.2rem;
   }
 }
+@media screen and (max-width: 550px){
+  .prices-main-title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+}
+
 `;
 
 export default PricesContainer;

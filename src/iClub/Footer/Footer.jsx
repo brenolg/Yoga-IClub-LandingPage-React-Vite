@@ -5,46 +5,13 @@ import yogaLogo from '../../images/yoga_iclub.svg';
 import youtube from '../../images/youtube.svg';
 import defaultScrollProps from '../../utils/defaultScrollProps';
 import FooterContainer from './styles';
+import { GoHome } from "react-icons/go";
 
 export default function Footer(isMobile) {
   return (
     <FooterContainer isMobile={isMobile}>
-
-      <div className="section-size main_container">
-
-        <div className="scroll-main-container">
-          <div className="scroll-sub-container">
-            <button className="text-md" type="button">
-              <Link to="start" {...defaultScrollProps}> início </Link>
-            </button>
-
-            <button className="text-md" type="button">
-              <Link to="iclub" {...defaultScrollProps}> iclub </Link>
-            </button>
-          </div>
-
-          <div className="scroll-sub-container">
-
-            <button className="text-md" type="button">
-              <Link to="students" {...defaultScrollProps}> alunos </Link>
-            </button>
-            <button className="text-md" type="button">
-              <Link to="prices" {...defaultScrollProps}> preços </Link>
-            </button>
-          </div>
-
-          <div className="scroll-sub-container">
-            <button className="text-md" type="button">
-              <Link to="doubts" {...defaultScrollProps}> dúvidas </Link>
-            </button>
-            <button className="text-md" type="button">
-              <Link to="contact" {...defaultScrollProps}> contato </Link>
-            </button>
-          </div>
-        </div>
-
-        <nav className="social-links">
-          <a
+        <nav className="social-links-footer">
+          <a 
             href="https://www.instagram.com/isabellacayuela/"
             target="_blank"
             rel="noopener noreferrer"
@@ -67,12 +34,19 @@ export default function Footer(isMobile) {
           >
             <img src={youtube} alt="youtube" />
           </a>
+          <a
+            href="https://yogaiclub.isabellacayuela.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GoHome className='home-icon' />
+          </a>
         </nav>
 
-        <Link className="link" to="prices" {...defaultScrollProps}>
+        <Link className="" to="prices" {...defaultScrollProps}>
           <img className="logo" src={yogaLogo} alt="yoga-logo" />
         </Link>
-      </div>
+  
 
     </FooterContainer>
 

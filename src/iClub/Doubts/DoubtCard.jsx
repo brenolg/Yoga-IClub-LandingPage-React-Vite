@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import React from 'react';
 import { DoubtCardStyles } from './styles';
 
 export default function DoubtCard({
@@ -16,7 +15,7 @@ export default function DoubtCard({
   };
   return (
 
-    <DoubtCardStyles className="section-size">
+    <DoubtCardStyles >
       <h4 className={`${handleQuestionClass()} question`}>{question}</h4>
       <p className={`${isMobile ? 'text-md' : 'text-xl'} answer`}>{answer}</p>
     </DoubtCardStyles>

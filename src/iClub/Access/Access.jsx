@@ -9,14 +9,14 @@ import { AccessContainer } from './styles';
 export default function Access({ isMobile }) {
   return (
     <AccessContainer>
-      <div className="access_section section-size">
-        <h4 className={`${isMobile ? 'text-2xl' : 'text-3xl'} section-main-title`}>O que terá acesso?</h4>
+      <div className="access_section " data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="150"
+        data-aos-offset="0" >
+        <h4 className={` access-title`}>O que terá acesso?</h4>
 
         <div
           className="main_container"
-          data-aos="fade"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
         >
 
           <AccessCard

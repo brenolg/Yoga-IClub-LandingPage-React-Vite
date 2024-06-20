@@ -1,14 +1,16 @@
 import PropTypes from 'prop-types';
-import React from 'react';
 import PriceCard from './PriceCard';
 import PricesContainer from './styles';
 
 export default function Prices({ isTabletAndMobile, isMobile }) {
   return (
-    <PricesContainer id="prices">
+    <PricesContainer id="prices" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="150"
+        data-aos-offset="0" >
 
-      <div className="prices_section section-size">
-        <h4 className={`${isMobile ? 'text-2xl' : 'text-3xl'} section-main-title`}>
+      <div className="prices_section">
+        <h4 className={`${isMobile ? 'text-2xl' : 'text-3xl'} prices-main-title`}>
           Planos e preços:
         </h4>
 

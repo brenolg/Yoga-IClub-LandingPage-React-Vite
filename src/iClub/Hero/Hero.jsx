@@ -1,38 +1,19 @@
 import PropTypes from 'prop-types';
-import { useMediaQuery } from 'react-responsive';
-import ImageContainer from './ImageContainer';
 import TextContainer from './TextContainer';
 import { HeroContainer } from './styles';
+import divider from '../../assets/DIVISOR.png';
 
 export default function Hero({ isTabletAndMobile, isMobile, isTablet }) {
-  const heroBreakPoint = useMediaQuery({ query: '(max-width: 950px)' });
+
   return (
-    <HeroContainer className="section-size" id="start">
-      {
-        heroBreakPoint
-          ? (
-            <>
-              <ImageContainer />
-
-              <TextContainer
-                isTabletAndMobile={isTabletAndMobile}
-                isMobile={isMobile}
-                isTablet={isTablet}
-              />
-            </>
-          )
-          : (
-            <>
-              <TextContainer
-                isTabletAndMobile={isTabletAndMobile}
-                isMobile={isMobile}
-                isTablet={isTablet}
-              />
-
-              <ImageContainer />
-            </>
-          )
-      }
+    <HeroContainer  id="start">
+      <TextContainer
+        isTabletAndMobile={isTabletAndMobile}
+        isMobile={isMobile}
+        isTablet={isTablet}
+      />
+      <div className='hero-color-bg '></div>
+      <img className='divider-hero' src={divider} alt=''/>
     </HeroContainer>
   );
 }

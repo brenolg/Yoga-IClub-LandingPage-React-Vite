@@ -1,18 +1,17 @@
 import PropTypes from 'prop-types';
-import React from 'react';
 import DoubtCard from './DoubtCard';
 import { DoubtsContainer } from './styles';
 
 export default function Doubts({ isMobile, isTabletAndMobile, isTablet }) {
   return (
-    <DoubtsContainer className="section-size" id="doubts">
-      <h4 className={`${isMobile ? 'text-2xl' : 'text-3xl'} section-main-title`}>Dúvidas comuns</h4>
+    <DoubtsContainer  id="doubts" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="150"
+        data-aos-offset="0" >
+      <h4 className={`doubt-main-title`}>Dúvidas comuns</h4>
 
       <div
         className="main_container"
-        data-aos="fade"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
       >
 
         <DoubtCard

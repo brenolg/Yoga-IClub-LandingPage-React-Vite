@@ -3,64 +3,42 @@ import { Link } from 'react-scroll';
 import defaultScrollProps from '../../utils/defaultScrollProps';
 import { TextContainerStyle } from './styles';
 
-export default function TextContainer({ isTabletAndMobile, isMobile, isTablet }) {
-  const handleTextClass = () => {
-    if (isTabletAndMobile) {
-      return 'main_text text-xs';
-    }
-    return 'main_text text-sm';
-  };
+export default function TextContainer({  isMobile, isTablet }) {
+
 
   const handleTitleClass = () => {
+    let titleClass = 'H2';
     if (isTablet) {
-      return 'H4';
+      titleClass = 'H3';
     }
     if (isMobile) {
-      return 'H5';
+      titleClass = 'H4';
     }
-    return 'H2';
+    return titleClass;
   };
 
   return (
     <TextContainerStyle
       className="hero_text"
-      data-aos="fade-up"
-      data-aos-easing="ease-in-out"
-      data-aos-duration="1500"
+  
     >
       <h2 className={`${handleTitleClass()} main_title`}>
-        A plataforma de yoga mais prática, didática e direta que você já acessou!
+        Olá, meu nome é Isabella Cayuela, seja muito bem vinda ao nosso espaço de Yoga! 
       </h2>
 
       <div>
-        <p className={handleTextClass()}>
-          Quer começar mas não sabe por onde? Já pratica e quer evolui? O Yoga
-          iClub é para todos!
+        <p className='text-hero'>
+          Você já sabe que está há um passo de encontrar uma vida com mais calma e leveza né?! Mas quero saber se está preparada para além da leveza e calmaria se sentir muito bem com seu corpo e consigo mesma? 
         </p>
 
-        <p className={handleTextClass()}>
-          Aqui você não precisa ter flexibilidade, força,
-          peso ou idade ideais. Vamos praticar técnicas milenares e alcançar os
-          benefícios juntos!
-        </p>
-
-        <p className={handleTextClass()}>
-          Yoga iClub é para todos aqueles que acreditam que é
-          possível ter uma vida equilibrada! Meu objetivo é te ajudar a
-          encontrar a prática e rotina ideais pra você!
-        </p>
       </div>
 
       <div className="button_container">
         <Link className="link" to="prices" {...defaultScrollProps}>
-          <button className="Button button" type="button">
-            Quero começar!
+          <button className="hero-button" type="button">
+            Quero começar agora!
           </button>
         </Link>
-
-        <span className="text-md span">
-          + de 500 vidas impactadas
-        </span>
       </div>
     </TextContainerStyle>
   );

@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
-import imgDesktop from '../../images/bela-about-desktop.png';
-import imgMobile from '../../images/bela-about-mobile.png';
-import imgTablet from '../../images/bela-about-tablet.png';
+
 import { AboutContainer, ContactContainer } from './styles';
 
 export default function About({ isMobile, isTablet }) {
@@ -15,36 +13,30 @@ export default function About({ isMobile, isTablet }) {
     return 'text-lg';
   };
 
-  const handleImage = () => {
-    if (isMobile) {
-      return imgMobile;
-    }
-    if (isTablet) {
-      return imgTablet;
-    }
-    return imgDesktop;
-  };
 
   return (
     <>
-      <AboutContainer id="contact">
+      <AboutContainer id="contact"      
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="150"
+        data-aos-offset="0" >
 
-        <div className="section-size about-section">
-          {isMobile && (<h4 className="text-3xl about-title">Olá! Eu sou Isabella Cayuela,</h4>)}
+        <div className="about-section"  
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+        >
+          {!isTablet && (<h4 className="about-title">Olá! Eu sou Isabella Cayuela,</h4>)}
 
           <div className="img-container">
-            <img
+            <div
               className="image"
-              src={handleImage()}
               alt="Isabella Cayuela"
-              data-aos="fade"
-              data-aos-easing="linear"
-              data-aos-duration="1500"
             />
           </div>
 
           <div className="text-xs text-container">
-            {!isMobile && (<h4 className="text-3xl about-title">Olá! Eu sou Isabella Cayuela,</h4>)}
+            {isTablet && (<h4 className="about-title">Olá! Eu sou Isabella Cayuela,</h4>)}
 
             <p className={handleTextClass()}>
               Há mais de 7 anos estudo, vivencio e ensino o Yoga para quem se propõe
@@ -71,9 +63,9 @@ export default function About({ isMobile, isTablet }) {
         </div>
       </AboutContainer>
 
-      <ContactContainer className="section-size">
-        <h4 className={`${isMobile ? 'text-2xl' : 'text-3xl'}`}>Ainda com dúvidas?</h4>
-        <button className="Button button" type="button">
+      <ContactContainer >
+        <h4 className={`doubt-about-title`}>Ainda com dúvidas?</h4>
+        <button className="doubt-about-button" type="button">
           <a
             href="https://api.whatsapp.com/send/?phone=5531996793158"
             target="_blank"

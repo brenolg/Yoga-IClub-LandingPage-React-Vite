@@ -2,11 +2,38 @@ import styled from 'styled-components';
 
 const DoubtsContainer = styled.section`
   color: var(--C4);
-
-.main_container {
-  display: flex;
-  flex-direction: column;
-  gap: 3.2rem;
+  padding: var(--spacing-s7, 56px) 76px;
+  padding-bottom: 3.2rem;
+  .main_container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+  .doubt-main-title {
+    font-family: syne, ivy, sans-serif;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.1ch;
+    line-height: 1.2em;
+    color: var(--C4);
+    margin-bottom: 3.2rem;
+  }
+@media screen and (max-width: 960px) {
+  padding: 32px 32px 48px 32px;
+  .doubt-main-title {
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.1ch;
+    line-height: 1.2em; 
+    margin-bottom: 2.4rem;
+  }
+}
+@media screen and (max-width: 550px) {
+    .doubt-main-title {
+    text-align: center;
+  }
 }
 `;
 
