@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import { AboutContainer, ContactContainer } from './styles';
 
-export default function About({ isMobile, isTablet }) {
+export default function About({ isMobile, isTablet, isTabletAndMobile }) {
   const handleTextClass = () => {
     if (isMobile) {
       return 'text-xs';
@@ -26,7 +26,7 @@ export default function About({ isMobile, isTablet }) {
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
         >
-          {!isTablet && (<h4 className="about-title">Olá! Eu sou Isabella Cayuela,</h4>)}
+          {!isTabletAndMobile && (<h4 className="about-title">Olá! Eu sou Isabella Cayuela,</h4>)}
 
           <div className="img-container">
             <div
@@ -36,7 +36,7 @@ export default function About({ isMobile, isTablet }) {
           </div>
 
           <div className="text-xs text-container">
-            {isTablet && (<h4 className="about-title">Olá! Eu sou Isabella Cayuela,</h4>)}
+            {isTabletAndMobile && (<h4 className="about-title">Olá! Eu sou Isabella Cayuela,</h4>)}
 
             <p className={handleTextClass()}>
               Há mais de 7 anos estudo, vivencio e ensino o Yoga para quem se propõe
