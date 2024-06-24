@@ -89,7 +89,7 @@
 
 .H2 {
   font-family: ivy, sans-serif;
-  font-size: 4.5rem;
+  font-size: 4.3rem;
   font-style: normal;
   font-weight: 300;
   letter-spacing: 0.15ch;
@@ -200,7 +200,7 @@
   font-style: normal;
   font-weight: 900;
   letter-spacing: 0.1ch;
-  text-transform: uppercase;
+  text-transform: lowercase;
   padding: 0.6em 1.2em;
   line-height: 1.5em;
 }

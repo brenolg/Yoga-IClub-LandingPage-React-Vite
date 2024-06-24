@@ -9,10 +9,10 @@ const HeroContainer = styled.section`
   padding-top: 5.2rem;
   background: url(${hero}) ;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   position: relative;
   .hero-color-bg {
-    background: #C9D3D0A6;
+    background: #c9d3d075;
     position: absolute;
     top: 0;
     left: 0;

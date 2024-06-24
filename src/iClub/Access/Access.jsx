@@ -22,7 +22,7 @@ export default function Access({ isMobile }) {
           <AccessCard
             isMobile={isMobile}
             img={onlineTechs}
-            text="Aulas ao vivo toda terça: 8h e 19h30, e quinta: 8h e 9h, com correções e ajustes"
+            text="Aulas ao vivo toda semana com correção e ajustes mentoradas por mim"
           />
 
           <AccessCard

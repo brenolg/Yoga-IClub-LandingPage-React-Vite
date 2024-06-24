@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 export default function PriceCard({
-  title, subTitle, price, list, link, isPremium, isTabletAndMobile, isMobile, isTablet,
+  title, subTitle, price, list, link, isPremium, isTabletAndMobile, isMobile, isTablet,span
 }) {
   const handleSubTitleClass = () => {
     // Mobile
@@ -40,7 +40,8 @@ export default function PriceCard({
           <h4 className={`${handleSubTitleClass()} price-sub-title`}>{subTitle}</h4>
         </div>
 
-        <h4 className="price">{price}</h4>
+        <h4 className="price">
+          <span>{span}</span>{price}</h4>
 
         <ul className="text-md list">
           {list.map((li, index) => (

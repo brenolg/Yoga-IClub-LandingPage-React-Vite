@@ -23,14 +23,11 @@ const PillarsContainer = styled.section`
 }
 .pillars_container {
   display: flex;
-  flex-shrink: 0;
-  align-items: flex-start;
-  padding-right: 0;
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;
   width: 100%;
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
   gap: 3rem;
 }
 .pillar-main-title {
@@ -72,7 +69,7 @@ const PillarsContainer = styled.section`
   font-style: normal;
   font-weight: 900;
   letter-spacing: 0.1ch;
-  text-transform: uppercase;
+  text-transform: lowercase;
   padding: 0.6em 1.2em;
   line-height: 1.5em;
   margin: 0 auto;
@@ -221,33 +218,7 @@ const PillarCardStyles = styled.div`
   letter-spacing: 0.36px;
   margin-bottom: 1.4rem;
 }
-.pillar-card-button {
-  border-radius: var(--radius-radius-full, 360px);
-  background: var(--C4, #123939);
-  display: flex;
-  padding: 0 24px;
-  justify-content: center;
-  align-items: center;
-  height: 47px;
-  /* Sombra */
-  box-shadow: 0px 2px 3px 0px rgba(37, 37, 37, 0.10);
-  color: var(--C1, #EFEFEF);
-  font-family: syne;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 30px */
-  letter-spacing: 0.5px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  border: 1px solid var(--C4, #123939);
-  transition: all 0.3s;
-}
-.pillar-card-button:hover  {
-  background: transparent;
-  color: var(--C4, #123939);
-}
+
 .pillar-span {
   font-weight: 600;
 }
@@ -259,7 +230,6 @@ const PillarCardStyles = styled.div`
 @media screen and (max-width: 760px) {
   .pillar-back {
     width: 100%;
-    height: 100%;
   }
   .pillar-front {
     width: 100%;

@@ -26,9 +26,11 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                   isTabletAndMobile={isTabletAndMobile}
                   title="iClub Pro"
                   subTitle="(anual)"
-                  price="R$ 180,00/mês"
-                  link="https://pay.hotmart.com/J71174272X?off=md84l2lk"
+                  span="A partir de"
+                  price="R$ 200,00/mês"
+                  link="https://api.whatsapp.com/send/?phone=5531996793158"
                   list={[
+                    'Aulas mentoradas ao vivo diretamente com Isabella Cayuela a partir de R$200',
                     'Acesso as aulas AO VIVO 2x por semana',
                     'Acesso a plataforma com aulas gravadas',
                     'Temas novos todos os meses',
@@ -46,7 +48,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                   isTabletAndMobile={isTabletAndMobile}
                   title="iClub"
                   subTitle="anual"
-                  price="R$ 39,90/mês"
+                  price="R$ 49,90/mês"
                   link="https://pay.hotmart.com/J71174272X?off=sghdkt84"
                   list={[
                     'Acesso a plataforma com aulas gravadas',
@@ -87,7 +89,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                   isTabletAndMobile={isTabletAndMobile}
                   title="iClub"
                   subTitle="anual"
-                  price="R$ 39,90/mês"
+                  price="R$ 49,90/mês"
                   link="https://pay.hotmart.com/J71174272X?off=sghdkt84"
                   list={[
                     'Acesso a plataforma com aulas gravadas',
@@ -107,9 +109,11 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                   isTabletAndMobile={isTabletAndMobile}
                   title="iClub Pro"
                   subTitle="(anual)"
-                  price="R$ 180,00/mês"
-                  link="https://pay.hotmart.com/J71174272X?off=md84l2lk"
+                  price="R$ 200,00/mês"
+                  span="A partir de"
+                  link="https://api.whatsapp.com/send/?phone=5531996793158"
                   list={[
+                    'Aulas mentoradas ao vivo diretamente com Isabella Cayuela a partir de R$200',
                     'Acesso as aulas AO VIVO 2x por semana',
                     'Acesso a plataforma com aulas gravadas',
                     'Temas novos todos os meses',
@@ -127,7 +131,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                   isTabletAndMobile={isTabletAndMobile}
                   title="iClub"
                   subTitle="mensal"
-                  price="R$ 69,90/mês"
+                  price="R$ 89,90/mês"
                   link="https://pay.hotmart.com/J71174272X?off=4o7gr397"
                   list={[
                     'Acesso a plataforma com aulas gravadas',

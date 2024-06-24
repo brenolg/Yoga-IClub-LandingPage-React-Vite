@@ -25,7 +25,7 @@ padding: var(--spacing-s7, 56px) 76px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 34rem;
+  max-width: 38rem;
 }
 
 .premium {
@@ -62,6 +62,10 @@ padding: var(--spacing-s7, 56px) 76px;
   font-weight: 600;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
+  span {
+    font-size: 3rem;
+  }
 }
 
 .list {
@@ -142,7 +146,6 @@ padding: var(--spacing-s7, 56px) 76px;
     width: 100%;
   }
 }
-
 @media screen and (max-width: 420px) {
   .premium .price-title {
     font-size: 3.8rem;

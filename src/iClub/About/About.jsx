@@ -26,7 +26,7 @@ export default function About({ isMobile, isTablet, isTabletAndMobile }) {
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
         >
-          {!isTabletAndMobile && (<h4 className="about-title">Olá! Eu sou Isabella Cayuela,</h4>)}
+          {isTabletAndMobile && (<h4 className="about-title">Olá! Eu sou Isabella Cayuela,</h4>)}
 
           <div className="img-container">
             <div
@@ -36,7 +36,7 @@ export default function About({ isMobile, isTablet, isTabletAndMobile }) {
           </div>
 
           <div className="text-xs text-container">
-            {isTabletAndMobile && (<h4 className="about-title">Olá! Eu sou Isabella Cayuela,</h4>)}
+            {!isTabletAndMobile && (<h4 className="about-title">Olá! Eu sou Isabella Cayuela,</h4>)}
 
             <p className={handleTextClass()}>
               Há mais de 7 anos estudo, vivencio e ensino o Yoga para quem se propõe
