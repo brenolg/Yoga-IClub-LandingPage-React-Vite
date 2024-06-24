@@ -195,10 +195,10 @@
 
 .Button {
   color: var(--C1);
-  font-family: Arial , sans-serif;
-  font-size: 2rem;
+  font-family: syne;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.1ch;
   text-transform: lowercase;
   padding: 0.6em 1.2em;

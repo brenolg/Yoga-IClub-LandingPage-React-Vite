@@ -50,6 +50,7 @@ letter-spacing: 0.4px;
   align-items: center;
   gap: var(--spacing-s1, 8px);
   border-radius: var(--radius-radius-full, 360px);
+  border: 1px solid var(--C4, #123939);
   background: var(--C4, #123939);
   box-shadow: 0px 2px 3px 0px rgba(37, 37, 37, 0.10);
   font-family: syne;
@@ -61,6 +62,11 @@ letter-spacing: 0.4px;
   text-transform: lowercase;
   color: var(--C1);
   height: 5.6rem;
+}
+.seal-button:hover  {
+  background: transparent;
+  color: var(--C4);
+  cursor: pointer;
 }
 .seal-elipse {
   position: absolute;

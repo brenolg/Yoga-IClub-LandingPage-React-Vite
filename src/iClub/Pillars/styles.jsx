@@ -64,10 +64,10 @@ const PillarsContainer = styled.section`
   /* Sombra */
   box-shadow: 0px 2px 3px 0px rgba(37, 37, 37, 0.10);
   color: var(--C1, #ffffff);
-  font-family: Arial , sans-serif;
-  font-size: 2rem;
+  font-family: syne;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.1ch;
   text-transform: lowercase;
   padding: 0.6em 1.2em;
@@ -79,6 +79,7 @@ const PillarsContainer = styled.section`
 .pillar-main-button:hover  {
   background: transparent;
   color: var(--C4, #123939);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {

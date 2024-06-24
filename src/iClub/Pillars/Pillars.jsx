@@ -34,7 +34,7 @@ export default function Pillars({ isMobile, isTabletAndMobile }) {
         <PillarCard
           isTabletAndMobile={isTabletAndMobile}
           img={pillarSecond}
-          title="Avançados"
+          title="Intermediários"
           strongTxt='Intermediário:'
           firstPart="práticas mais longas e intensas, ásanas desafiadores, pranayamas mais avançados e meditações profundas."
           secondPart="Aulas desenvolvidas para aperfeiçoar a sua técnica e lapidar sua prática."

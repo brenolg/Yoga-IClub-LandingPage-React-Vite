@@ -35,14 +35,6 @@ export default function Doubts({ isMobile, isTabletAndMobile, isTablet }) {
           isTabletAndMobile={isTabletAndMobile}
           isMobile={isMobile}
           isTablet={isTablet}
-          question="Como funciona o crédito recorrente?"
-          answer="O valor total do iClub Pro anual é R$2.160,00, porém esse valor não irá comprometer totalmente o limite do seu cartão de crédito e sim apenas os R$180,00 por mês"
-        />
-
-        <DoubtCard
-          isTabletAndMobile={isTabletAndMobile}
-          isMobile={isMobile}
-          isTablet={isTablet}
           question="Nas aulas ao vivo o contato é direto com a Isabella Cayuela?"
           answer="Sim, você terá contato direto comigo nas aulas ao vivo, onde conseguirei te corrigir sempre que necessário e guiar ao vivo técnicas exclusivas e mais avançadas."
         />

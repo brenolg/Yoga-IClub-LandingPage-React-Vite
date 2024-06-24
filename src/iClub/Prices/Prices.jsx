@@ -25,12 +25,11 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                   isMobile={isMobile}
                   isTabletAndMobile={isTabletAndMobile}
                   title="iClub Pro"
-                  subTitle="(anual)"
-                  span="A partir de"
+                  span="a partir de"
                   price="R$ 200,00/mês"
                   link="https://api.whatsapp.com/send/?phone=5531996793158"
                   list={[
-                    'Aulas mentoradas ao vivo diretamente com Isabella Cayuela a partir de R$200',
+                    'Aulas mentoradas ao vivo com Isabella Cayuela',
                     'Acesso as aulas AO VIVO 2x por semana',
                     'Acesso a plataforma com aulas gravadas',
                     'Temas novos todos os meses',
@@ -38,7 +37,6 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                     'Aulas práticas e teóricas',
                     'Aulas didáticas para avançar e   lapidar sua prática',
                     'Acesso a bônus exclusivos da comunidade',
-                    'Pagamento recorrente, 12x de R$180 (não compromete o limite do cartão)',
                   ]}
                 />
 
@@ -58,7 +56,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                     'Aulas didáticas para avançar e lapidar sua prática',
                     'Acesso a bônus exclusivos da comunidade',
                     'Acesso a bônus exclusivos da comunidade',
-                    'Pagamento parcelado, até 12x de R$39,90',
+                    'Pagamento parcelado, até 12x de R$49,90',
                   ]}
                 />
 
@@ -68,7 +66,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                   isTabletAndMobile={isTabletAndMobile}
                   title="iClub"
                   subTitle="mensal"
-                  price="R$ 69,90/mês"
+                  price="R$ 89,90/mês"
                   link="https://pay.hotmart.com/J71174272X?off=4o7gr397"
                   list={[
                     'Acesso a plataforma com aulas gravadas',
@@ -99,7 +97,7 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                     'Aulas didáticas para avançar e lapidar sua prática',
                     'Acesso a bônus exclusivos da comunidade',
                     'Acesso a bônus exclusivos da comunidade',
-                    'Pagamento parcelado, até 12x de R$39,90',
+                    'Pagamento parcelado, até 12x de R$49,90',
                   ]}
                 />
 
@@ -108,20 +106,18 @@ export default function Prices({ isTabletAndMobile, isMobile }) {
                   isMobile={isMobile}
                   isTabletAndMobile={isTabletAndMobile}
                   title="iClub Pro"
-                  subTitle="(anual)"
                   price="R$ 200,00/mês"
-                  span="A partir de"
+                  span="a partir de"
                   link="https://api.whatsapp.com/send/?phone=5531996793158"
                   list={[
-                    'Aulas mentoradas ao vivo diretamente com Isabella Cayuela a partir de R$200',
+                    'Aulas mentoradas ao vivo com Isabella Cayuela',
                     'Acesso as aulas AO VIVO 2x por semana',
                     'Acesso a plataforma com aulas gravadas',
                     'Temas novos todos os meses',
                     'Aulas de Hatha e Vinyasa',
                     'Aulas práticas e teóricas',
-                    'Aulas didáticas para avançar e   lapidar sua prática',
+                    'Aulas didáticas para avançar e lapidar sua prática',
                     'Acesso a bônus exclusivos da comunidade',
-                    'Pagamento recorrente, 12x de R$180 (não compromete o limite do cartão)',
                   ]}
                 />
 
